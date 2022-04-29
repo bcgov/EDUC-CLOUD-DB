@@ -16,7 +16,7 @@ fullnameOverride: edx-api-patroni
 
 appdb:
   create: true
-  dbname: edx-api
+  dbname: edx_api
 
 env:
   ALLOW_NOSSL: "true"
