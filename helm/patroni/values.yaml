@@ -25,6 +25,9 @@ auth:
   standby:
     username: standby
     password: pinacolada
+  appuser:
+    username: appuser
+    password: pop
 
 appdb:
   create: false
