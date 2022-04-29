@@ -17,17 +17,17 @@ image:
 auth:
   existingSecret:
   superuser:
-    username: postgres
-    password: tea
+    username: {{ randAlphaNum 15 }}
+    password: {{ randAlphaNum 15 }}
   admin:
-    username: admin
-    password: cola
+    username: {{ randAlphaNum 15 }}
+    password: {{ randAlphaNum 15 }}
   standby:
-    username: standby
-    password: pinacolada
+    username: {{ randAlphaNum 15 }}
+    password: {{ randAlphaNum 15 }}
   appuser:
-    username: appuser
-    password: pop
+    username: {{ randAlphaNum 15 }}
+    password: {{ randAlphaNum 15 }}
 
 appdb:
   create: false
