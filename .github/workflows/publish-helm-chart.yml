@@ -1,4 +1,4 @@
-name: Publish Patroni Helm Chart
+name: Publish Patroni Helm Chart 1
 
 on:
   push:
