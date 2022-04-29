@@ -3,6 +3,32 @@ entries:
   patroni:
   - apiVersion: v1
     appVersion: 2.1-p1
+    created: "2022-04-29T02:04:08.495440555Z"
+    dependencies:
+    - condition: etcd.deployChart
+      name: etcd
+      repository: https://charts.helm.sh/incubator
+      version: 0.6.2
+    - condition: zookeeper.deployChart
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 1.0.0
+    - condition: consul.deployChart
+      name: consul
+      repository: https://charts.helm.sh/stable
+      version: 3.6.1
+    description: 'Highly available elephant herd: HA PostgreSQL cluster.'
+    digest: 691aeb984f6a97847ee581c8c86a368b2b71b40d26a165eb0d326f856320aa32
+    home: https://github.com/zalando/patroni
+    name: patroni
+    sources:
+    - https://github.com/zalando/patroni
+    - https://github.com/zalando/spilo
+    urls:
+    - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/patroni-0.19.7/patroni-0.19.7.tgz
+    version: 0.19.7
+  - apiVersion: v1
+    appVersion: 2.1-p1
     created: "2022-04-29T01:28:26.167918392Z"
     dependencies:
     - condition: etcd.deployChart
@@ -209,4 +235,4 @@ entries:
     urls:
     - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/patroni-0.18.9/patroni-0.18.9.tgz
     version: 0.18.9
-generated: "2022-04-29T01:28:26.167949692Z"
+generated: "2022-04-29T02:04:08.495484756Z"
