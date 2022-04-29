@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "patroni/**/Chart.yaml"
+      - "helm/**/Chart.yaml"
       - ".github/workflows/publish-helm-chart.yml"
 
 jobs:

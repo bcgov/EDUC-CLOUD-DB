@@ -7,9 +7,9 @@ image:
   pullPolicy: Always
   tag: 2.1-p5
 
-project: edx-api
-nameOverride: edx-api
-fullnameOverride: edx-api
+project: edx-api-patroni
+nameOverride: edx-api-patroni
+fullnameOverride: edx-api-patroni
 
 #auth:
 #  existingSecret: sso-patroni
