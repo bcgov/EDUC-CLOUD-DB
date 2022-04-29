@@ -11,10 +11,13 @@ metadata:
     project: {{ template "patroni.project" . }}
 type: Opaque
 data:
+  username-appuser: {{ .Values.auth.superuser.username | b64enc }}
   username-superuser: {{ .Values.auth.superuser.username | b64enc }}
   username-admin: {{ .Values.auth.admin.username | b64enc }}
   username-standby: {{ .Values.auth.standby.username | b64enc }}
   password-superuser: {{ .Values.auth.superuser.password | b64enc }}
   password-admin: {{ .Values.auth.admin.password | b64enc }}
   password-standby: {{ .Values.auth.standby.password | b64enc }}
+  password-appuser: {{ .Values.auth.standby.password | b64enc }}
+
 {{- end }}
