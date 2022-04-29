@@ -7,16 +7,16 @@ image:
   pullPolicy: Always
   tag: 2.1-p5
 
-project: sso-keycloak
-nameOverride: sso-patroni
-fullnameOverride: sso-patroni
+project: edx-api
+nameOverride: edx-api
+fullnameOverride: edx-api
 
-auth:
-  existingSecret: sso-patroni
+#auth:
+#  existingSecret: sso-patroni
 
 appdb:
   create: true
-  dbname: ssokeycloak
+  dbname: edx-api
 
 env:
   ALLOW_NOSSL: "true"
