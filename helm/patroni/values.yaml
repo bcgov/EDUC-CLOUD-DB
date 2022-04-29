@@ -16,15 +16,15 @@ image:
 # https://github.com/zalando/spilo/blob/master/ENVIRONMENT.rst
 auth:
   existingSecret:
-#  superuser:
-#    username: postgres
-#    password: tea
-#  admin:
-#    username: admin
-#    password: cola
-#  standby:
-#    username: standby
-#    password: pinacolada
+  superuser:
+    username: postgres
+    password: tea
+  admin:
+    username: admin
+    password: cola
+  standby:
+    username: standby
+    password: pinacolada
 
 appdb:
   create: false
