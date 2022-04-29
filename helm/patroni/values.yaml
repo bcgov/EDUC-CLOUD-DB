@@ -14,7 +14,7 @@ image:
 # Credentials used by Patroni
 # https://github.com/zalando/patroni/blob/master/docs/SETTINGS.rst#postgresql
 # https://github.com/zalando/spilo/blob/master/ENVIRONMENT.rst
-#auth:
+auth:
 #  existingSecret:
 #  superuser:
 #    username: postgres
