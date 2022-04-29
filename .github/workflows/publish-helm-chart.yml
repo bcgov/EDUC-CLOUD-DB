@@ -17,10 +17,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check for gh-pages branch
-        run: |
-          git ls-remote --exit-code --heads origin gh-pages
-
       - name: Configure Git
         run: |
           git config user.name "$GITHUB_ACTOR"
