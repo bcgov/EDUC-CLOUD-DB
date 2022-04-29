@@ -17,17 +17,17 @@ image:
 auth:
   existingSecret:
   superuser:
-    username: {{ randAlphaNum 15 | quote }}
-    password: {{ randAlphaNum 15 | quote }}
+    username: '{{ randAlphaNum 15 | quote }}'
+    password: '{{ randAlphaNum 15 | quote }}'
   admin:
-    username: {{ randAlphaNum 15 | quote }}
-    password: {{ randAlphaNum 15 | quote }}
+    username: '{{ randAlphaNum 15 | quote }}'
+    password: '{{ randAlphaNum 15 | quote }}'
   standby:
-    username: {{ randAlphaNum 15 | quote }}
-    password: {{ randAlphaNum 15 | quote }}
+    username: '{{ randAlphaNum 15 | quote }}'
+    password: '{{ randAlphaNum 15 | quote }}'
   appuser:
-    username: {{ randAlphaNum 15 | quote }}
-    password: {{ randAlphaNum 15 | quote }}
+    username: '{{ randAlphaNum 15 | quote }}'
+    password: '{{ randAlphaNum 15 | quote }}'
 
 appdb:
   create: false
