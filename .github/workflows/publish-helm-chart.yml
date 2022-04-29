@@ -1,4 +1,4 @@
-name: Publish Keycloak Helm Chart
+name: Publish Patroni Helm Chart
 
 on:
   push:
