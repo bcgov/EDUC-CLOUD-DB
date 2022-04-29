@@ -11,13 +11,21 @@ metadata:
     project: {{ template "patroni.project" . }}
 type: Opaque
 data:
-  username-appuser: {{ .Values.auth.appuser.username | b64enc }}
-  username-superuser: {{ .Values.auth.superuser.username | b64enc }}
-  username-admin: {{ .Values.auth.admin.username | b64enc }}
-  username-standby: {{ .Values.auth.standby.username | b64enc }}
-  password-superuser: {{ .Values.auth.superuser.password | b64enc }}
-  password-admin: {{ .Values.auth.admin.password | b64enc }}
-  password-standby: {{ .Values.auth.standby.password | b64enc }}
-  password-appuser: {{ .Values.auth.appuser.password | b64enc }}
+#  username-appuser: {{ .Values.auth.appuser.username | b64enc }}
+#  username-superuser: {{ .Values.auth.superuser.username | b64enc }}
+#  username-admin: {{ .Values.auth.admin.username | b64enc }}
+#  username-standby: {{ .Values.auth.standby.username | b64enc }}
+#  password-superuser: {{ .Values.auth.superuser.password | b64enc }}
+#  password-admin: {{ .Values.auth.admin.password | b64enc }}
+#  password-standby: {{ .Values.auth.standby.password | b64enc }}
+#  password-appuser: {{ .Values.auth.appuser.password | b64enc }}
+  username-appuser: {{ randAlphaNum 15 | b64enc }}
+  username-superuser: {{ randAlphaNum 15 | b64enc }}
+  username-admin: {{ randAlphaNum 15 | b64enc }}
+  username-standby: {{ randAlphaNum 15 | b64enc }}
+  password-superuser: {{ randAlphaNum 15 | b64enc }}
+  password-admin: {{ randAlphaNum 15 | b64enc }}
+  password-standby: {{ randAlphaNum 15 | b64enc }}
+  password-appuser: {{ randAlphaNum 15 | b64enc }}
 
 {{- end }}
