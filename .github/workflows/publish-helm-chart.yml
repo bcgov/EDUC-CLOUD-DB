@@ -3,7 +3,7 @@ name: Publish Keycloak Helm Chart
 on:
   push:
     branches:
-      - dev
+      - main
     paths:
       - "patroni/Chart.yaml"
       - ".github/workflows/publish-helm-chart.yml"
