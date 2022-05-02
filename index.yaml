@@ -365,4 +365,18 @@ entries:
     urls:
     - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/patroni-0.18.9/patroni-0.18.9.tgz
     version: 0.18.9
-generated: "2022-05-02T21:56:18.188912468Z"
+  spilo:
+  - apiVersion: v1
+    appVersion: 2.1-p4
+    created: "2022-05-02T22:03:56.425955284Z"
+    description: 'Highly available elephant herd: HA PostgreSQL cluster.'
+    digest: ba87193be8e06ce43dea37af8edabac748de7cf5b92a18ed1f80600073443f22
+    home: https://github.com/bcgov/spilo-chart
+    name: spilo
+    sources:
+    - https://github.com/zalando/spilo
+    - https://github.com/bcgov/spilo-chart
+    urls:
+    - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/spilo-0.2.1/spilo-0.2.1.tgz
+    version: 0.2.1
+generated: "2022-05-02T22:03:56.426389118Z"
