@@ -3,7 +3,7 @@ replicaCount: 3
 image:
   # https://github.com/zalando/spilo/releases/tag/2.1-p1
   # RH SSO JDBC is enable to connect to PostgreSQL 14
-  repository: registry.opensource.zalan.do/acid/spilo-14
+  repository: registry.opensource.zalan.do/acid/spilo-13
   pullPolicy: Always
   tag: 2.1-p1
 
