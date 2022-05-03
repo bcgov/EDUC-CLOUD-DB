@@ -2,13 +2,13 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ template "patroni.fullname" . }}
+  name: {{ template "spilo.fullname" . }}
   labels:
-    app: {{ template "patroni.fullname" . }}
-    chart: {{ template "patroni.chart" . }}
+    app: {{ template "spilo.fullname" . }}
+    chart: {{ template "spilo.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
-    project: {{ template "patroni.project" . }}
+    project: {{ template "spilo.project" . }}
   annotations:
     "helm.sh/hook": "post-install,post-upgrade"
     "helm.sh/hook-weight": "1"
@@ -17,8 +17,8 @@ spec:
   template:
     metadata:
       labels:
-        app: {{ template "patroni.fullname" . }}
-        project: {{ template "patroni.project" . }}
+        app: {{ template "spilo.fullname" . }}
+        project: {{ template "spilo.project" . }}
     spec:
       containers:
         - name: initdb
@@ -44,30 +44,30 @@ spec:
               echo "done"
           env:
             - name: PGHOST
-              value: {{ template "patroni.fullname" . }}
+              value: {{ template "spilo.fullname" . }}
             - name: PGPORT
               value: "5432"
             - name: PGUSER
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "patroni.fullname" . }}
+                  name: {{ template "spilo.fullname" . }}
                   key: username-superuser
             - name: PGPASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "patroni.fullname" . }}
+                  name: {{ template "spilo.fullname" . }}
                   key: password-superuser
             - name: PGDATABASE_NAME
               value: {{ .Values.appdb.dbname }}
             - name: APPUSER_USERNAME
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "patroni.fullname" . }}
+                  name: {{ template "spilo.fullname" . }}
                   key: username-appuser
             - name: APPUSER_PASSWORD
               valueFrom:
                 secretKeyRef:
-                  name: {{ template "patroni.fullname" . }}
+                  name: {{ template "spilo.fullname" . }}
                   key: password-appuser
       restartPolicy: Never
   backoffLimit: 1
