@@ -368,6 +368,19 @@ entries:
   spilo:
   - apiVersion: v1
     appVersion: 2.1-p4
+    created: "2022-05-03T19:46:59.210196514Z"
+    description: 'Highly available elephant herd: HA PostgreSQL cluster.'
+    digest: 4fe646214ccaa6f2cf8c5cc76af0e8f23d7cecda4f619c6a72723a2be4c0de36
+    home: https://github.com/bcgov/spilo-chart
+    name: spilo
+    sources:
+    - https://github.com/zalando/spilo
+    - https://github.com/bcgov/spilo-chart
+    urls:
+    - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/spilo-0.2.3/spilo-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v1
+    appVersion: 2.1-p4
     created: "2022-05-02T23:28:00.204065673Z"
     description: 'Highly available elephant herd: HA PostgreSQL cluster.'
     digest: 9755b91d0796a04fbd5ca52bfc58de95bdfb4adac070e4b01a1e018a4e915219
@@ -392,4 +405,4 @@ entries:
     urls:
     - https://github.com/bcgov/EDUC-CLOUD-DB/releases/download/spilo-0.2.1/spilo-0.2.1.tgz
     version: 0.2.1
-generated: "2022-05-02T23:28:00.204142376Z"
+generated: "2022-05-03T19:46:59.210588681Z"
