@@ -24,13 +24,19 @@ credentials:
     # Key of the existing secret containing the standby user password
     appuserKey: ~
 
-
-  random: true
   # The values below allow you to specify passwords for the superuser (postgres), admin, and standby users.
-  superuser: tea
-  admin: cola
-  standby: pinacolada
-  appuser: fresca
+  superuser:
+    username: postgres
+    password: tea
+  admin:
+    username: admin
+    password: cola
+  standby:
+    username: standby
+    password: pinacolada
+  appuser:
+    username: appuser
+    password: pop
 
 # Extra custom environment variables.
 # See https://github.com/zalando/spilo/blob/master/ENVIRONMENT.rst
