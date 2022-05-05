@@ -1,7 +1,7 @@
 apiVersion: v1
 name: spilo
-description: "Highly available elephant herd: HA PostgreSQL cluster."
-version: 0.2.7
+description: "Highly available Postgres: HA PostgreSQL cluster."
+version: 0.2.8
 appVersion: 2.1-p4
 home: https://github.com/bcgov/spilo-chart
 sources:
