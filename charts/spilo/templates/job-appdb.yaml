@@ -66,5 +66,5 @@ spec:
                   name: {{ template "spilo.fullname" . }}
                   key: password-appuser
       restartPolicy: Never
-  backoffLimit: 1
+  backoffLimit: 3
 {{- end }}
