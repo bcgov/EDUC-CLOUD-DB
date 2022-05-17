@@ -1,2 +1,2 @@
 # EDUC-CLOUD-DB
-repository for educ cloud dbs
+repository for educ cloud databases
