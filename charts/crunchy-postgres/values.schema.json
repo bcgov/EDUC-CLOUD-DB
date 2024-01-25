@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Helm Chart Values Schema",
+  "type": "object",
+  "properties": {
+    "nameOverride": {
+      "type": "string"
+    },
+    "fullnameOverride": {
+      "type": "string"
+    },
+    "database": {
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "global": {
+      "type": "object",
+      "properties": {
+        "secrets": {
+          "type": "object",
+          "properties": {
+            "databasePassword": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "databaseUser": {
+              "type": "string"
+            },
+            "databaseName": {
+              "type": "string"
+            },
+            "annotation": {
+              "type": "object"
+            }
+          },
+          "additionalProperties": true,
+          "required": [
+          ]
+        },
+        "domain": {
+          "type": "string"
+        },
+        "tag": {
+          "type": "string"
+        },
+        "serverFrontend": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "autoscaling": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            }
+          }
+        }
+      },
+      "required": [
+        "secrets",
+        "domain"
+      ],
+      "additionalProperties": true
+    },
+    "crunchy": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "required": [
+    "database",
+    "global"
+  ],
+  "additionalProperties": true
+}
